@@ -48,7 +48,8 @@ Install the required libraries to be able to run the scripts:
 ## Running the codes
 
 
-### Netmiko simple code: netmiko_simple.py
+### Netmiko simple code: netmiko_simple.py [Referred to as Step 4 in slides]
+Mission of the script: Use Netmiko to create vlan 20 and vlan 30 and configure 10 intergaces on a switch.
 
 Add device information directly in the `netmiko_simple.py` script and change all **'CHANGE ME'** values. 
 
@@ -80,6 +81,8 @@ Output should be:
  *** Netmiko Python Script Execution completed *** 
 ````
 ### Netmiko advanced code: netmiko_advanced.py
+Mission of the script: Use Netmiko to request data from the device, parse it and identify all inactive access ports. Then randomly pick one of the inactive ports and configure it with a vlan you choose and also configure the chosen port as an access port. 
+
 Add device information directly in the `netmiko_simple.py` script and change all **'CHANGE ME'** values. 
 
 ```
@@ -112,7 +115,9 @@ GigabitEthernet1/0/37
 Hello you chose vlan 20
 ```
 
-### NETCONF script: netconf_script.py
+### NETCONF script: netconf_script.py [Referred to as Step 5 in slides]
+Mission of the script: Use NETFCONF and YANG models to create vlan 20 and vlan 30 and configure 10 interfaces on a IOS XE switch.
+
 Add device information directly in the `netconf_script.py` script and change all **'CHANGE ME'** values. 
 
 ````
@@ -156,8 +161,7 @@ Here is the raw XML data returned from the device.
 
 10 OK
 ````
-### ZTP script: ztp.py
-
+### ZTP script: ztp.py [Referred to as Step 10 in slides]
 This script `ztp.py` is intended to be downloaded to and executed in the IOS XE Guestshell during the zero-touch booting process. You need to add it to an HTTP or TFTP server. In this example, we are utilising HTTP server.
 
 Configure DHCP option 67 on the DHCP server (in this example in the router) to point the IOS XE device to your script's HTTP server location. See example below:
