@@ -9,13 +9,17 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-1. Python installed on your machine
-2. An active virtual environment where you have installed the required modules and libraries. 
-3. An IOS XE device for testing against
+1. Python installed in your development environment. Follow this lab to create your developer environment: <https://developer.cisco.com/learning/modules/dev-setup/dev-win/step/1>
 
+2. An active virtual environment where you have installed the required modules and libraries. 
+
+Create a virtual environment
 ```
-Give examples
+code $ python3 -m venv venv 
 ```
+
+
+3. An IOS XE device for testing against
 
 ### Installing
 
