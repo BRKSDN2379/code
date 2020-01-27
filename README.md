@@ -79,25 +79,23 @@ Output should be:
 
  *** Netmiko Python Script Execution completed *** 
 ````
-
-### And coding style tests
-
-Explain what these tests test and why
+### Netmiko advanced code
+Add device information directly in the netmiko_simple.py script and change all 'CHANGE ME' values. 
 
 ```
-Give an example
+    devices = {
+        "device_type": "cisco_xe",
+        "ip": "CHANGE ME",
+        "username": "CHANGE ME",
+        "password": "CHANGE ME"
+    }
 ```
 
-## Deployment
+Execute the simple Netmiko code example netmiko_advanced.py
 
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
+```
+(venv)root:code$ python netmiko_advanced.py
+```
 
 ## Authors & Maintainers
 
