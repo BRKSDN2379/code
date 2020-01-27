@@ -50,7 +50,7 @@ Install the required libraries to be able to run the scripts:
 
 ### Netmiko simple code: netmiko_simple.py
 
-Add device information directly in the netmiko_simple.py script and change all 'CHANGE ME' values. 
+Add device information directly in the netmiko_simple.py script and change all **'CHANGE ME'** values. 
 
 ```
 device = {
@@ -80,7 +80,7 @@ Output should be:
  *** Netmiko Python Script Execution completed *** 
 ````
 ### Netmiko advanced code: netmiko_advanced.py
-Add device information directly in the netmiko_simple.py script and change all 'CHANGE ME' values. 
+Add device information directly in the netmiko_simple.py script and change all **'CHANGE ME'** values. 
 
 ```
     devices = {
@@ -113,7 +113,7 @@ Hello you chose vlan 20
 ```
 
 ### NETCONF script: netconf_script.py
-Add device information directly in the netconf_script.py script and change all 'CHANGE ME' values. 
+Add device information directly in the netconf_script.py script and change all **'CHANGE ME'** values. 
 
 ````
 DEVICE_TYPE = "cisco_xe"
