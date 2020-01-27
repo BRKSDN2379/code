@@ -11,7 +11,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 1. Python installed on your machine
 2. An active virtual environment where you have installed the required modules and libraries. 
-3. 
+3. An IOS XE device for testing against
 
 ```
 Give examples
@@ -75,7 +75,7 @@ Smart people responsible for the creation and maintenance of this project:
 
 ## Credits
 
-Credits to be given to Jeremy Cohoe <jcohoe@cisco.com>, who has provided the original ZTP script. 
+Credits to be given to Jeremy Cohoe <https://github.com/jeremycohoe>, who has provided the original ZTP script. 
 
 ## License
 
