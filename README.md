@@ -43,7 +43,7 @@ Install the required libraries to be able to run the scripts:
 
 ### Netmiko simple code
 
-Add device information directly in the netmiko_simple.py script. 
+Add device information directly in the netmiko_simple.py script and change all 'CHANGE ME' values. 
 
 ```
 device = {
@@ -59,6 +59,19 @@ Execute the simple Netmiko code example netmiko_simple.py
 ```
 (venv)root:code$ python netmiko_simple.py
 ```
+Output should be: 
+
+````
+(venv) root:code$ python main_netmiko.py 
+
+
+ *** Configuring vlan 20 for interface g1/0/1 - 3 and vlan 30 for interface g1/0/4 - 10 *** 
+
+
+
+
+ *** Netmiko Python Script Execution completed *** 
+````
 
 ### And coding style tests
 
