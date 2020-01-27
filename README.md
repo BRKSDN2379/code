@@ -7,11 +7,13 @@ In this repository we are sharing all code that has been presented during the br
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
+
 ### Prerequisites
 
 1. Python installed in your development environment. 
 2. An active virtual environment where you have installed the required modules and libraries.
-3. An IOS XE device for testing against
+3. Clone this repository to the environment in which you are working
+4. An IOS XE device for testing against
 
 Follow this lab to create your developer environment: <https://developer.cisco.com/learning/modules/dev-setup/dev-win/step/1>
 
@@ -19,7 +21,12 @@ Setup virtual environment: <https://developer.cisco.com/learning/devnet-express/
 
 ### Installing
 
-When you have your developer environment up and running, make sure you install all libraries and modules required for your scripts. Make sure you have your virtualenvironment activated before installing. 
+When you have your developer environment up and running, make sure you install all libraries and modules required for your scripts. Make sure you have your virtualenvironment activated before installing them. 
+
+Clone this repository to the environment in which your are working: 
+````
+root$ git clone https://github.com/BRKSDN2379/code.git
+````
 
 Activate virtual environment if you are running the script on a Mac/Linux machine: 
 
