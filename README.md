@@ -48,7 +48,7 @@ Install the required libraries to be able to run the scripts:
 ## Running the codes
 
 
-### Netmiko simple code
+### Netmiko simple code: netmiko_simple.py
 
 Add device information directly in the netmiko_simple.py script and change all 'CHANGE ME' values. 
 
@@ -79,7 +79,7 @@ Output should be:
 
  *** Netmiko Python Script Execution completed *** 
 ````
-### Netmiko advanced code
+### Netmiko advanced code: netmiko_advanced.py
 Add device information directly in the netmiko_simple.py script and change all 'CHANGE ME' values. 
 
 ```
@@ -112,7 +112,7 @@ GigabitEthernet1/0/37
 Hello you chose vlan 20
 ```
 
-### NETCONF script
+### NETCONF script: netconf_script.py
 Add device information directly in the netconf_script.py script and change all 'CHANGE ME' values. 
 
 ````
@@ -156,7 +156,7 @@ Here is the raw XML data returned from the device.
 
 10 OK
 ````
-### ZTP script
+### ZTP script: ztp.py
 
 This script ztp.py is intended to be downloaded to and executed in the IOS XE Guestshell during the zero-touch booting process. You need to add it to an HTTP or TFTP server. In this example, we are utilising HTTP server.
 
