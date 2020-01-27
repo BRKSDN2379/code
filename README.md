@@ -9,18 +9,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-1. Python installed in your development environment. Follow this lab to create your developer environment: <https://developer.cisco.com/learning/modules/dev-setup/dev-win/step/1>
-
-2. An active virtual environment where you have installed the required modules and libraries. 
-
-Create a virtual environment
-```
-code $ python3 -m venv venv 
-```
-
-
+1. Python installed in your development environment. 
+2. An active virtual environment where you have installed the required modules and libraries.
 3. An IOS XE device for testing against
 
+Follow this lab to create your developer environment: <https://developer.cisco.com/learning/modules/dev-setup/dev-win/step/1>
+
+ 
 ### Installing
 
 A step by step series of examples that tell you how to get a development env running
