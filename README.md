@@ -14,6 +14,7 @@ These instructions will get you a copy of the project up and running on your loc
 3. An IOS XE device for testing against
 
 Follow this lab to create your developer environment: <https://developer.cisco.com/learning/modules/dev-setup/dev-win/step/1>
+
 Setup virtual environment: <https://developer.cisco.com/learning/devnet-express/dnav3-track/dnav3-verify/dnav3-verify/step/4>
 
 ### Installing
@@ -26,7 +27,7 @@ Activate virtual environment if you are running the script on a Mac/Linux machin
 (venv)root:code$ source venv/bin/activate
 ```
 
-Activate virtual environment if you are running the script on a Windows machine and Windows git-bash: 
+Activate virtual environment if you are running the script on a Windows machine with Windows git-bash: 
 
 ```
 (venv)root:code$  source venv/Scripts/activate 
@@ -39,14 +40,24 @@ Install the required libraries to be able to run the scripts:
 ```
 ## Running the codes
 
-Explain how to run the automated tests for this system
 
-### Break down into end to end tests
+### Netmiko simple code
 
-Explain what these tests test and why
+Add device information directly in the netmiko_simple.py script. 
 
 ```
-Give an example
+device = {
+    'device_type':'cisco_xe',
+    'ip':'CHANGE ME',
+    'username':'CHANGE ME',
+    'password':'CHANGE ME',
+}
+```
+
+
+Execute the simple Netmiko code example netmiko_simple.py
+```
+(venv)root:code$ python netmiko_simple.py
 ```
 
 ### And coding style tests
