@@ -112,6 +112,68 @@ GigabitEthernet1/0/37
 Hello you chose vlan 20
 ```
 
+### NETCONF script
+Add device information directly in the netconf_script.py script and change all 'CHANGE ME' values. 
+
+````
+DEVICE_TYPE = "cisco_xe"
+USERNAME = "CHANGE ME"
+PASSWORD = "CHANGE ME"
+IP_ADDRESS = "CHANGE ME"
+
+````
+
+Execute the simple NETCONF code example netconf_script.py. 
+
+````
+(venv) root:code$ python netconf_script.py
+````
+
+Part of the output should be:
+
+````
+    <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
+        <interface>
+            <GigabitEthernet>
+                <name>1/0/10</name>
+                <switchport>
+                    <access xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-switch">
+                        <vlan><vlan>30</vlan></vlan>
+                    </access>
+                </switchport>
+                <description> Configured by NETCONF </description>
+            </GigabitEthernet>
+        </interface>
+    </native>
+</config>
+Here is the raw XML data returned from the device.
+
+<?xml version="1.0" ?>
+<rpc-reply message-id="urn:uuid:e8d412b7-92d3-4f7d-a3d5-33f54a99d6cf" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+        <ok/>
+</rpc-reply>
+
+
+10 OK
+````
+### ZTP script
+
+This script ztp.py is intended to be downloaded to and executed in the IOS XE Guestshell during the zero-touch booting process. You need to add it to an HTTP or TFTP server. In this example, we are utilising HTTP server.
+
+Configure DHCP option 67 on the DHCP server (in this example in the router) to point the IOS XE device to your script's HTTP server location. See example below:
+
+````
+Router> enable
+Router# configure terminal
+Router(config)# ip dhcp pool pnp_device_pool
+Router(config-dhcp)# network 10.1.0.0 255.255.255.0
+Router(config-dhcp)# default-router 10.1.0.1
+Router(config-dhcp)# option 67 ascii http://10.1.0.2:8000/ztp.py 
+Router(config-dhcp)# end
+
+````
+After this, you should be all set to reboot your IOS XE device! 
+
 ## Authors & Maintainers
 
 People responsible for the creation and maintenance of this project:
