@@ -31,7 +31,7 @@ from ncclient import manager
 import xmltodict
 import xml.dom.minidom
 
-'''XML encoded YANG data - YANG vlan data model and YANG interface data model'''
+'''XML encoded YANG data - YANG vlan data model and YANG interface data model for IOS XE version 16.9.3'''
 netconf_add_vlan_to_if = """
 <config>
     <native xmlns="http://cisco.com/ns/yang/Cisco-IOS-XE-native">
