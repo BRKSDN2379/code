@@ -101,7 +101,7 @@ Add additional notes about how to deploy this on a live system
 
 ## Authors & Maintainers
 
-Smart people responsible for the creation and maintenance of this project:
+People responsible for the creation and maintenance of this project:
 
 - Christina Skoglund <cskoglun@cisco.com>
 - Juulia Santala <jusantal@cisco.com>
