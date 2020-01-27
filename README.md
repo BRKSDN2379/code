@@ -50,7 +50,7 @@ Install the required libraries to be able to run the scripts:
 
 ### Netmiko simple code: netmiko_simple.py
 
-Add device information directly in the netmiko_simple.py script and change all **'CHANGE ME'** values. 
+Add device information directly in the `netmiko_simple.py` script and change all **'CHANGE ME'** values. 
 
 ```
 device = {
@@ -62,7 +62,7 @@ device = {
 ```
 
 
-Execute the simple Netmiko code example netmiko_simple.py
+Execute the simple Netmiko code example `netmiko_simple.py`
 ```
 (venv) root:code$ python netmiko_simple.py
 ```
@@ -80,7 +80,7 @@ Output should be:
  *** Netmiko Python Script Execution completed *** 
 ````
 ### Netmiko advanced code: netmiko_advanced.py
-Add device information directly in the netmiko_simple.py script and change all **'CHANGE ME'** values. 
+Add device information directly in the `netmiko_simple.py` script and change all **'CHANGE ME'** values. 
 
 ```
     devices = {
@@ -91,7 +91,7 @@ Add device information directly in the netmiko_simple.py script and change all *
     }
 ```
 
-Execute the simple Netmiko code example netmiko_advanced.py. Make sure to add the vlan you want to configure as an argument, see example below where I add vlan 20. 
+Execute the simple Netmiko code example `netmiko_advanced.py`. Make sure to add the vlan you want to configure as an argument, see example below where I add vlan 20. 
 
 ```
 (venv) root:code$ python netmiko_advanced.py -vlan 20
@@ -113,7 +113,7 @@ Hello you chose vlan 20
 ```
 
 ### NETCONF script: netconf_script.py
-Add device information directly in the netconf_script.py script and change all **'CHANGE ME'** values. 
+Add device information directly in the `netconf_script.py` script and change all **'CHANGE ME'** values. 
 
 ````
 DEVICE_TYPE = "cisco_xe"
@@ -123,7 +123,7 @@ IP_ADDRESS = "CHANGE ME"
 
 ````
 
-Execute the simple NETCONF code example netconf_script.py. 
+Execute the simple NETCONF code example `netconf_script.py`. 
 
 ````
 (venv) root:code$ python netconf_script.py
@@ -158,7 +158,7 @@ Here is the raw XML data returned from the device.
 ````
 ### ZTP script: ztp.py
 
-This script ztp.py is intended to be downloaded to and executed in the IOS XE Guestshell during the zero-touch booting process. You need to add it to an HTTP or TFTP server. In this example, we are utilising HTTP server.
+This script `ztp.py` is intended to be downloaded to and executed in the IOS XE Guestshell during the zero-touch booting process. You need to add it to an HTTP or TFTP server. In this example, we are utilising HTTP server.
 
 Configure DHCP option 67 on the DHCP server (in this example in the router) to point the IOS XE device to your script's HTTP server location. See example below:
 
@@ -172,7 +172,7 @@ Router(config-dhcp)# option 67 ascii http://10.1.0.2:8000/ztp.py
 Router(config-dhcp)# end
 
 ````
-After this, you should be all set to reboot your IOS XE device! 
+After this, you should be all set to reboot your **IOS XE device**! 
 
 ## Authors & Maintainers
 
@@ -184,6 +184,8 @@ People responsible for the creation and maintenance of this project:
 ## Credits
 
 Credits to be given to Jeremy Cohoe <https://github.com/jeremycohoe>, who has provided the original ZTP script. 
+
+**Credits to be given to Pedro Oliveira for awesome README.md skills.**
 
 ## License
 
