@@ -31,19 +31,19 @@ root$ git clone https://github.com/BRKSDN2379/code.git
 Activate virtual environment if you are running the script on a Mac/Linux machine: 
 
 ```
-(venv)root:code$ source venv/bin/activate
+(venv) root:code$ source venv/bin/activate
 ```
 
 Activate virtual environment if you are running the script on a Windows machine with Windows git-bash: 
 
 ```
-(venv)root:code$  source venv/Scripts/activate 
+(venv) root:code$  source venv/Scripts/activate 
 ```
 
 Install the required libraries to be able to run the scripts: 
 
 ```
-(venv)root:code$ pip install -r requiements.txt
+(venv) root:code$ pip install -r requirements.txt
 ```
 ## Running the codes
 
@@ -64,7 +64,7 @@ device = {
 
 Execute the simple Netmiko code example netmiko_simple.py
 ```
-(venv)root:code$ python netmiko_simple.py
+(venv) root:code$ python netmiko_simple.py
 ```
 Output should be: 
 
@@ -91,10 +91,25 @@ Add device information directly in the netmiko_simple.py script and change all '
     }
 ```
 
-Execute the simple Netmiko code example netmiko_advanced.py
+Execute the simple Netmiko code example netmiko_advanced.py. Make sure to add the vlan you want to configure as an argument, see example below where I add vlan 20. 
 
 ```
-(venv)root:code$ python netmiko_advanced.py
+(venv) root:code$ python netmiko_advanced.py -vlan 20
+```
+Output should be:
+```
+(venv) root:code$ python netmiko_advanced.py -vlan 20
+
+
+*** Configured interface ***
+
+GigabitEthernet1/0/37
+
+
+*** Data stored in excel document
+
+
+Hello you chose vlan 20
 ```
 
 ## Authors & Maintainers
