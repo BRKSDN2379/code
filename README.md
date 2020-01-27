@@ -14,27 +14,30 @@ These instructions will get you a copy of the project up and running on your loc
 3. An IOS XE device for testing against
 
 Follow this lab to create your developer environment: <https://developer.cisco.com/learning/modules/dev-setup/dev-win/step/1>
+Setup virtual environment: <https://developer.cisco.com/learning/devnet-express/dnav3-track/dnav3-verify/dnav3-verify/step/4>
 
- 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
+When you have your developer environment up and running, make sure you install all libraries and modules required for your scripts. Make sure you have your virtualenvironment activated before installing. 
 
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
+Activate virtual environment if you are running the script on a Mac/Linux machine: 
 
 ```
-until finished
+(venv)root:code$ source venv/bin/activate
 ```
 
-End with an example of getting some data out of the system or using it for a little demo
+Activate virtual environment if you are running the script on a Windows machine and Windows git-bash: 
 
-## Running the tests
+```
+(venv)root:code$  source venv/Scripts/activate 
+```
+
+Install the required libraries to be able to run the scripts: 
+
+```
+(venv)root:code$ pip install -r requiements.txt
+```
+## Running the codes
 
 Explain how to run the automated tests for this system
 
