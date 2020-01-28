@@ -94,7 +94,7 @@ Add device information directly in the `netmiko_simple.py` script and change all
     }
 ```
 
-Execute the simple Netmiko code example `netmiko_advanced.py`. Make sure to add the vlan you want to configure as an argument, see example below where I add vlan 20. 
+Execute the simple Netmiko code example `netmiko_advanced.py`. Make sure to add the vlan you want to configure as an argument, see example below where I add vlan 20 when executing the script. 
 
 ```
 (venv) root:code$ python netmiko_advanced.py -vlan 20
