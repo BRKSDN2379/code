@@ -176,7 +176,7 @@ Router(config-dhcp)# option 67 ascii http://10.1.0.2:8000/ztp.py
 Router(config-dhcp)# end
 
 ````
-After this, you should be all set to reboot your **IOS XE device**! 
+After this, you should be all set to boot your **IOS XE device**! 
 
 ## Authors & Maintainers
 
