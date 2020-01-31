@@ -49,7 +49,7 @@ Install the required libraries to be able to run the scripts:
 
 
 ### Netmiko simple code: netmiko_simple.py [Referred to as Step 4 in slides]
-Mission of the script: Use Netmiko to create vlan 20 and vlan 30 and configure 10 intergaces on a switch.
+Mission of the script: Use Netmiko to create vlan 20 and vlan 30 and configure 10 interfaces on a switch.
 
 Add device information directly in the `netmiko_simple.py` script and change all **'CHANGE ME'** values. 
 
